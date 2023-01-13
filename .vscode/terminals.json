@@ -1,0 +1,37 @@
+{
+    "autorun": true,
+    "terminals": [
+      {
+        "name": "root",
+        "focus": false,
+        "command": ""
+      },
+      {
+        "name": "artisan",
+        "focus": true,
+        "commands": [
+          ""
+        ]
+      },
+      {
+        "name": "DEV",
+        "focus": false,
+        "commands": [
+          "cd ~/Homestead",
+          "vagrant ssh",
+          "cd /home/vagrant/unisys/unisys-taskman",
+          "yarn dev"
+        ]
+      },
+      {
+        "name": "WS",
+        "focus": false,
+        "commands": [
+          "cd ~/Homestead",
+          "vagrant ssh",
+          "cd /home/vagrant/unisys/unisys-ws",
+          "php artisan websockets:serve"
+        ]
+      }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "unisys-taskman",
+  "version": "0.1.0",
+  "description": "Контроль исполнительской дисциплины",
+  "productName": "ЕИС: Исполнительская дисциплина",
+  "author": "I.Kravec <I.Kravec@ws377.server.local>",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@quasar/vite-plugin": "^1.0.10",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "axios": "^0.25",
+    "laravel-echo": "^1.12.1",
+    "laravel-vite-plugin": "^0.2.1",
+    "lodash": "^4.17.19",
+    "postcss": "^8.1.14",
+    "pusher-js": "^7.2.0",
+    "sass": "1.32.12",
+    "vite": "^2.9.11"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.14.1",
+    "animate.css": "^4.1.1",
+    "quasar": "^2.7.3",
+    "vue": "^3.2.37",
+    "vue-router": "^4.0.16"
+  }
+}

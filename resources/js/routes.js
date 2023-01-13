@@ -1,0 +1,33 @@
+export default [
+  { path: '/', redirect: {name: 'create'} },
+  { path: '/create', component: () => import('@/pages/TasksCreatePage.vue'), name: 'create' },
+  { path: '/execute', component: () => import('@/pages/TasksExecutePage.vue'), name: 'execute' },
+  { path: '/coexecute', component: () => import('@/pages/TasksCoexecutePage.vue'), name: 'coexecute' },
+  { path: '/control', component: () => import('@/pages/TasksControlPage.vue'), name: 'control' },
+  { path: '/notes', component: () => import('@/pages/Notes.vue'), name: 'notes' },
+  // { path: 'add', component: () => import('pages/AddTaskPage.vue'), name: 'add' },
+  { path: '/task/:id', component: () => import('@/pages/TaskDetails.vue'), name: 'task' },
+  { path: '/mails', component: () => import('@/pages/MailsPage.vue'), name: 'mails' },
+  { path: '/outgoing-mails', component: () => import('@/pages/OutgoingMailsPage.vue'), name: 'outgoingMails' },
+  { path: '/decrees', component: () => import('@/pages/DecreesPage.vue'), name: 'decrees' },
+  { path: '/ksDecrees', component: () => import('@/pages/KsDecreesPage.vue'), name: 'ksDecrees' },
+  { path: '/orders', component: () => import('@/pages/OrdersPage.vue'), name: 'orders' },
+  // { path: 'memorandums', component: () => import('pages/MemorandumsPage'), name: 'memorandums' },
+  // { path: 'protocols', component: () => import('pages/ProtocolsPage'), name: 'protocols' },
+  { path: '/poas', component: () => import('@/pages/PoasPage.vue'), name: 'poas' },
+  { path: '/miscdocuments', component: () => import('@/pages/MiscDocumentsPage.vue'), name: 'miscdocuments' },
+  // { path: 'docs/add', component: () => import('pages/AddDocument.vue'), name: 'addDoc' },
+  { path: '/documents/deleted', component: () => import('@/pages/DocumentDeleted.vue'), name: 'documentDeleted' },
+  { path: '/document/:id', component: () => import('@/pages/DocumentDetails.vue'), name: 'document' },
+  { path: '/executors', component: () => import('@/pages/ExecutorsList.vue'), name: 'executorsList' },
+  { path: '/projects', component: () => import('@/pages/ProjectsList.vue'), name: 'projects' },
+  { path: '/project/:id', component: () => import('@/pages/ProjectDetails.vue'), name: 'project' },
+
+  { path: '/tasks-control', component: () => import('@/pages/TasksAllPage.vue'), name: 'tasksAll' },
+  // { path: 'register-outgoing', component: () => import('pages/OutgoingDocumentsPage.vue'), name: 'registerOutgoing' },
+
+  { path: '/tasks-print', component: () => import('@/pages/TasksPrintPage.vue'), name: 'tasksPrint' },
+  { path: '/tasks-sum-print', component: () => import('@/pages/TasksSumPrintPage.vue'), name: 'tasksSumPrint' },
+
+  { path: '/task-deleted', component: () => import('@/pages/TaskDeletedPage.vue'), name: 'taskDeleted' },
+]
